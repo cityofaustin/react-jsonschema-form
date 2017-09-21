@@ -142,7 +142,7 @@ const themes = {
       "//cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/yeti/bootstrap.min.css",
     editor: "eclipse",
   },
-};
+}; // TODO: Here are the bootstrap themes, if you'd like to just fork one of the css files and add another theme to this selector it's not a bad option (we can look into better ways to structure our css later)
 
 class GeoPosition extends Component {
   constructor(props) {
@@ -383,6 +383,7 @@ class App extends Component {
     setImmediate(() => {
       // Side effect!
       document.getElementById("theme").setAttribute("href", stylesheet);
+      //TODO - if you want to keep using the existing bootstrap stuff then you can probably add extra theme stuff here
     });
   };
 
